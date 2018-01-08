@@ -18,10 +18,38 @@ get_header(); ?>
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
+				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
 			<?php endwhile; // end of the loop. ?>
-		</div><!-- .main-content -->
-	</div><!-- #primary -->
+		</div><!-- .site-content -->
+	</div><!-- .home-page -->
+
+
+<h4>Featured Work</h4>
+<section class="featured-work">
+		<div class="site-content">
+		
+
+		
+		<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+  		<?php while ( have_posts() ) : the_post(); 
+  		$image_1 = get_field("image_1");
+  		$size="medium";
+  	?>
+  		<div class="individual-featured-work">
+  		<figure>
+			<?php echo wp_get_attachment_image($image_1, $size); ?>
+  		</figure>
+    
+    	<h3><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h3>
+
+   
+       </div>
+  <?php endwhile; ?> 
+  <?php wp_reset_query(); ?>
+
+
+	</div>
+</section>
 
 <section class="recent-posts">
  <div class="site-content">
