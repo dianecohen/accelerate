@@ -90,8 +90,13 @@ align-items:center;
 h6{font-weight: normal;}
 
 p{
-	color: #45ab9d;
+	color: black;
 
+
+}
+
+p#description{
+	color:black;
 }
 
 div.images{
@@ -112,9 +117,102 @@ section.featured-work{
 	padding-top: 50px;
 }
 
-h3{
-	text-align: center;}
 
 .menu-item i._mi, .menu-item img._mi{
 	right:0;
 }
+
+p#contact-text{
+	color:black;
+}
+
+input#nf-field-4.ninja-forms-field.submit-button.nf-element{
+	background-color: 45ac9d;
+	margin-left:800px;
+}
+
+input[type="button"], input[type="submit"]{
+	background:#45ab9d;
+}
+
+
+
+
+.button {
+    background: #45ac9d;
+    margin-right: 500px;
+
+  }
+
+
+h5.our-services{
+	text-align:center;
+}
+
+p.we-take-pride{
+	text-align: center;
+}
+
+h4.interested{
+	padding-right:250px;
+	margin-bottom: -50px
+
+}
+
+div.about-button{
+	margin-right: -700px;
+padding-top: 10px;
+padding-left: 25px;
+}
+
+.this-service:nth-child(even) .service-image {
+float:right;
+}
+
+
+.this-service:nth-child(odd) .service-image {
+float:left;
+}
+
+.service-content:nth-child(odd) h3{
+	padding-left: 500px;
+}
+
+.service-content h3 {
+	padding-right: 500px;
+}
+
+.service-content h3{
+padding-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+.service-content:nth-child(odd) p {
+padding-left:100px;
+}
+
+.service-image{
+	margin-top: -250px;
+}
+
+h3.title{
+	padding-left: 350px;
+
+}
+
+p.description{
+	padding-left: 350px;
+
+
+}
+
+
+
