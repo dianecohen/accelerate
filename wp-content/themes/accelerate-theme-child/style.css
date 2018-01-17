@@ -175,29 +175,11 @@ float:left;
 }
 
 .service-content:nth-child(odd) h3{
-	padding-left: 500px;
-}
-
-.service-content h3 {
-	padding-right: 500px;
-}
-
-.service-content h3{
-padding-right: 100px;
+padding-left: 500px;
 }
 
 
 
-
-
-
-
-
-
-
-.service-content:nth-child(odd) p {
-padding-left:100px;
-}
 
 .service-image{
 	margin-top: -250px;
